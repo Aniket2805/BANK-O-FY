@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <title>BANK'O'FY</title>
+  <link rel="icon" type="image" href="1.png">
+  <script src="https://kit.fontawesome.com/0c64979b32.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="text-align: center;">
+  <div id="loading">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_nemvbuuw.json" background="transparent"
+      speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  </div>
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-body-tertiary rounded">
+        <img src="1.png" alt=".img" style="width: 5%;">
+        <a class="navbar-brand" href="index.html">BANK'O'FY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav" style="margin-left: auto;">
+            <li class="nav-item">
+              <a class="nav-link" href="loan.html" style="font-size: 1.35rem;">Loan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dio.html" style="font-size: 1.35rem;">Investment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="us.html" style="font-size: 1.35rem;">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="font-size: 1.35rem;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="font-size: 1.35rem;">Login/Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="Pricing">
+    <h1>Loan Information</h1>
+    <h3>Different Loans Offered by SBI</h3>
+    <div class="row">
+      <div class="col-lg-4  col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header" style="background-color: #CD7F32;">
+            <h3>Education Loan
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                class="bi bi-calculator" viewBox="0 0 16 16">
+                <path
+                  d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                <path
+                  d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
+              </svg>
+
+            </h3>
+          </div>
+          <div class="card-body">
+            <h2> SBI </h2>
+            <p>SBI Provides best interest rates for student loan.</p>
+            <p>100% Financing</p>
+            <p>NO Processing Fee</p>
+            <p> Quick sanction at Designated Campus Branch or more than 5000 Selected Branches all over the country
+            </p>
+            <p>Repayment period of upto 15 years after Course Period + 12 months of repayment holiday</p>
+            <p>>Regular full time Degree/ Diploma Courses through entrance test/ selection process.</p>
+            <p> Full time Executive Management Courses like PGPX</p>
+            <p> Fees payable to College/School/Hostel</p>
+
+
+            <div class="d-grid">
+              <button class="btn btn-dark btn-block btn-lg pricing-btn-d" type="button"
+                onclick="window.location.href='https://sbi.co.in/web/personal-banking/loans/education-loans/scholar-loan-scheme'">Take
+                me there</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4  col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header" style="background-color: #C0C0C0;">
+            <h3>Car Loan <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
+              </svg></h3>
+          </div>
+          <div class="card-body">
+            <h2>SBI</h2>
+
+            <p> Lowest Interest Rates & EMI</p>
+            <p> Longest Repayment Tenure (7 years)</p>
+            <p> Financing on On-Road price</p>
+            <p>On-Road price includes Registration & Insurance.</p>
+            <p> Interest calculated on Daily Reducing Balance</p>
+            <p> For purchase of new passenger cars, Multi Utility Vehicles (MUVs) and SUVs.</p>
+            <p> Financing Upto 90% of 'On-road Price'</p>
+            <p> No Advance EMI</p>
+
+            <p>Optional SBI Life Insurance cover available</p>
+            <p>First 6 months EMI to be 50% of Regular EMI applicable, provided, the tenure of loan is minimum 36
+              months.
+            </p>
+            <div class="d-grid">
+              <button class="btn btn-dark btn-block btn-lg pricing-btn-d"
+                onclick="window.location.href='https://sbi.co.in/web/personal-banking/loans/auto-loans/sbi-new-car-loan-scheme'">Lets
+                Get a Car</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4  col-md-12 pricing-column">
+        <div class="card">
+          <div class="card-header" style="background-color: #FFD700;">
+            <h3>Home Loan <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                class="bi bi-house-door" viewBox="0 0 16 16">
+                <path
+                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+              </svg></h3>
+          </div>
+          <div class="card-body">
+            <h2>SBI</h2>
+
+
+
+
+
+
+            <p>Home Loan products to suit every customers need</p>
+            <p> Low Interest Rates</p>
+            <p> Low Processing Fee</p>
+            <p> No Hidden Charges</p>
+            <p> No Pre Payment Penalty</p>
+            <p> Interest charges on Daily Reducing Balance</p>
+            <p> Repayment up to 30 years</p>
+            <p> Home Loan Available as Overdraft</p>
+            <p> Interest Concession for Women Borrowers</p>
+
+            <p>Home Loan EMI
+
+              <a href="https://homeloans.sbi/calculators">Calculator.</a>
+            </p>
+
+
+
+
+
+
+
+
+
+
+            <div class="d-grid">
+              <button class="btn btn-dark btn-block btn-lg pricing-btn-d" type="button"
+                onclick="window.location.href='https://homeloans.sbi/'">Get Yourself A Home</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" fill="currentColor" class="bi bi-calculator-fill"
+    viewBox="0 0 16 16">
+    <path
+      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
+  </svg>
+  <a href="https://sbi.co.in/web/student-platform/emi-calculator" target="_blank"><button type="button" class="btn btn-primary btn-lg">Calculate EMI's
+  </button></a>
+  <br>
+  <br>
+  <br>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" fill="currentColor" class="bi bi-calculator-fill"
+    viewBox="0 0 16 16">
+    <path
+      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
+  </svg>
+  <a href="https://groww.in/calculators/sbi-sip-calculator" target="_blank"><button type="button" class="btn btn-primary btn-lg">Mutual Funds SIP Return
+    Calculator</button></a>
+    <br>
+  <br>
+  <br>
+  <p> </p>
+
+
+  <!--   
+<br><br><br><br> -->
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="106" height="106" fill="currentColor" class="bi bi-calculator-fill"
+    viewBox="0 0 16 16">
+    <path
+      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
+  </svg>
+  <a href="https://sbi.co.in/web/student-platform/maturity-value-calculator" target="_blank"><button type="button" class="btn btn-primary btn-lg" >Maturity Value
+    Calculator</button></a>
+    <br>
+  <br>
+  <br>
+  <center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-info-circle"
+      viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+      <path
+        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+    </svg>
+    <a href="https://sbi.co.in/web/interest-rates/interest-rates/loan-schemes-interest-rates/personal-loans-schemes" target="_blank"><button type="button" class="btn btn-primary btn-lg" >More
+      SBI Personal Loan Schemes</button></a>
+  </center>
+
+
+  <br><br>
+  <center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-cash-coin"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+      <path
+        d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+      <path
+        d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+      <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+    </svg>
+    Calculate EMI's
+    <a href="https://www.sbimf.com/en-us/sip" target="_blank"><button type="button" class="btn btn-primary btn-lg">Learn More About SIP's</button></a>
+  </center>
+
+
+  <hr>
+  <footer class="footer text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Right -->
+      <div class="container p-4 pb-0 text-center">
+        <p style="text-align: center; font-weight: 600; font-size: 25px; color: #00337C;">Follow us</p>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+              class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="footer">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="2.png" alt=".img" style="width: 60%;">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Technologies
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Javascript</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Html</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">CSS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Bootstrap</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Loan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Investment</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i>New Delhi, India</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              aniketkumar.ug21@nsut.ac.in
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +91 8800139664</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset" href="index.html">BANK'O'Fy</a>
+  </div>
+  <!-- Footer -->
+  <script>
+    var overloader = document.getElementById("loading");
+    window.addEventListener("load", function () {
+      overloader.style.display = "none";
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Copyright -->
+
+
+</body>
+
+</html>

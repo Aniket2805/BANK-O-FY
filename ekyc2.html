@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ekycstyle2.css">
+
+</head>
+<body>
+    
+<h2>E-Kyc Form</h2>
+<p>Just Fill in this form and avoid getting into long queues.</p>
+
+<div class="container">
+ 
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="fathername">Father Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fathername" name="fathername" placeholder="Your Father name.." required>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country Of Origin</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Bhutan">Bhutan</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="ano">Aadhar Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="ano" name="ano"   minlength="12" maxlength="12"  placeholder="Your Aadhar Number is.." required>
+        </div>
+      </div>
+    <div class="row">
+    <label for="img1">Self Attested copy of aadhar (In pdf or jpeg format):</label>
+    <input type="file" id="img1" name="img1" accept="image/*">
+  </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="pno">Pan Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pno" name="pno"   minlength="10" maxlength="10"  placeholder="Your PAN Number is.." required>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="add">Address</label>
+      </div>
+      <div class="col-75">
+        <textarea id="add" name="add" placeholder="Write Your Address.." style="height:90px"></textarea>
+      </div>
+    </div>
+   <div class="row">
+    <label for="img">Address Proof (In pdf or jpeg format):                                </label>
+    <input type="file" id="img" name="img" accept="image/*">
+  </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="mobileno">Mobile Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mobileno" name="mobileno"   minlength="10" maxlength="10"  placeholder="Your Mobile Number is.." required>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="row">
+        <div class="col-25" style="padding-top: 1rem ; padding-left: 2.5rem;">
+        <input type="checkbox" name="terms" value="Read All Terms" required></div>
+        <div class="col-75">
+      <label for="terms"> I have read all the terms and by clicking this i understand any wrong data entered here is solely my responsibilty bank shall not be responsible for it.</label><br>
+      </div></div>
+
+
+
+
+    <div class="row">
+     
+      <button  id="sub">SUBMIT</button>
+    </div>
+  
+</div>
+
+<script type="module">
+
+
+  
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js';
+import { deleteDoc,getFirestore,setDoc,doc,collection,addDoc,getDoc,updateDoc} from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js';
+
+//import { getAnalytics } from "'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js'/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyA9crVY554uG3lZwPgqAGXC0UkezyyzWA0",
+authDomain: "bank-o-fy.firebaseapp.com",
+projectId: "bank-o-fy",
+storageBucket: "bank-o-fy.appspot.com",
+messagingSenderId: "183014842203",
+appId: "1:183014842203:web:299e8baa79894f13fb447e",
+measurementId: "G-02BSZ3JJCM"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+//
+const db = getFirestore(app);
+let First_Name=document.getElementById("fname");
+let Last_Name=document.getElementById("lname")
+let Father_Name=document.getElementById("fathername")
+let Country=document.getElementById("country")
+let Aadhar=document.getElementById("ano")
+let Pan=document.getElementById("pno")
+let Address=document.getElementById("add")
+let Phone_No=document.getElementById("mobileno")
+
+
+let submit=document.getElementById("sub");
+
+
+
+
+
+// WORKING 
+// Add docx with unique ID Aadhar 
+async function AddDocumentCustomId(){
+
+var ref=doc(db,"EKYC",Aadhar.value);
+const docRef= await setDoc(ref,{
+FIRST_NAME:First_Name.value,
+   LAST_NAME: Last_Name.value,
+  FATHER_NAME: Father_Name.value,
+  Country:Country.value,
+  Aadhar_No:Aadhar.value,
+  Pan_NO:Pan.value,
+  Address:Address.value,
+  Mobile_No:Phone_No.value
+})
+
+
+
+.then(()=>{
+alert("Record Added Successfully")
+
+
+location. reload()
+})
+.catch((error)=>{
+  
+      alert("Error"+error);
+      
+
+location. reload()
+
+});
+
+
+
+}
+
+
+
+
+
+
+
+submit.addEventListener("click",AddDocumentCustomId);
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+    
+</body>
+</html>

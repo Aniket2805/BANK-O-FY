@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login For Bank'O'FY</title>
+
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<head>
+
+<style>
+ 
+    input{
+      color:rgb(11, 102, 59);
+    }
+    .footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  #efefef;
+   color: white;
+   text-align: center;
+}
+.footer {
+    margin:0 auto;
+
+    height:auto;
+    overflow:hidden;
+    
+   width: 100%;
+   text-align: center;
+   background-color:  #263238;
+   color: white;
+    position: fixed;
+    bottom: 0px;
+}
+
+   
+</style>
+
+
+</head>
+<body>
+
+
+
+
+    <nav>
+        <div class="nav-wrapper #ffffff white
+        " >
+          <a class="brand-logo" href="index.html"style="color: #263238;">
+            <img src="4.png" style="width:14%">
+            
+          </a>
+          <ul id="nav-mobile" class="right ">
+            <li><a class="modal-trigger" href="#modal2" style="color: #263238;">Login</a></li>
+            <li><a class="modal-trigger"href="#modal1" style="color: #263238;">Sign Up</a></li>
+            <!-- <li><a class="modal-trigger" href="#modal3" >Log Out</a></li> -->
+            <li><a  id="logout" style="display:none" style="color: #263238;">Log Out</a></li>
+            <li><a id="delete" style="display:none" style="color: #263238;"> Delete Account</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<div>
+
+<h3 style="text-align: center;" class="intro"><ul><b>💵 Welcome To BANK'O'FY Services Page 💵</b></ul></h3>
+
+<h5 style="text-align: center;">🎯Login (for alreday Signed Up Users ) or Sign Up (for new Users) and view , update all your saved data</h5>
+<h5 style="text-align: center;">🎯Deposit Money</h5>
+<h5 style="text-align: center;">🎯Withdraw Money</h5>
+<h5 style="text-align: center;">🎯Apply For Loan</h5>
+<h5 style="text-align: center;">🎯All at one go here only.</h5>
+
+</div>
+
+
+ <!-- Modal SignUp-->
+ <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Sign Up</h4>
+      
+<input type="email"  id="signup" placeholder="email" />
+
+<input type="password"  id="signup_password" placeholder="password" />
+
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action">Submit
+    <i class="material-icons right"></i>
+  </button>
+ 
+  <button class="btn waves-effect waves-light #004d40 teal darken-4" id="signg">Sign Up with Google
+    <i class="material-icons right"></i>
+  </button>
+
+
+    
+   
+  </div>
+  </div>
+
+
+<!-- Modal for Login-->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Log In</h4>
+      
+<input type="email"  id="login" placeholder="email"  />
+
+<input type="password"  id="login_password" placeholder="password" />
+
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action">Log Me In
+    <i class="material-icons right"></i>
+  </button>
+
+  <button class="btn waves-effect waves-light #004d40 teal darken-4" id="forget"> Forget Password (get it at your mail)
+    <i class="material-icons right"></i>
+  </button>
+
+
+
+    </div>
+   
+  </div>
+<!-- 
+    Logout Model -->
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Log Out</h4>
+      
+
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4"  name="action" id="logout">Confirm Log Out
+    <i class="material-icons right"></i>
+  </button>
+
+
+
+    </div>
+   
+  </div>
+
+
+<!-- 
+Display user detials -->
+  <div class="center" id="detail" style="display:none" >
+    <h2 > Your Account Details</h2>
+    <div class="userDetails">
+
+    </div>
+
+  </div>
+
+
+
+<!-- 
+Edit user details -->
+<div id="modal4" style="display:none" >
+  <div class="modal-content">
+    <h4 style="text-align: center;" id="welhed"><strong>Welcome</strong> </h4>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-person-circle " viewBox="0 0 16 16" >
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </svg>
+    
+  
+
+
+<input type="text"   placeholder="Name" id="user_name" />
+
+<input type="text"   placeholder="Guardian Name" id="fname" />
+
+<input type="text"  placeholder="Mobile No" id="mobile" />
+
+<input type="text"   placeholder="Address" id="add">
+<input type="text"  placeholder="Aadhar Number" id="ano">
+
+<input type="text"   placeholder="Age" id="age">
+<input type="text"   placeholder="Nationality" id="nation">
+
+
+<input type="number"   placeholder="Balance" id="bal">
+
+<input type="email"   placeholder="E-Mail" id="email">
+
+<input type="text"   placeholder="Loan Taken"  value="No Loan Taken "id="isloan">
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="addSub">Submit
+  <i class="material-icons right"></i>
+</button>
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="sear">Search and Update Data With Aadhar No
+  <i class="material-icons right"></i>
+</button>
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="del">Delete Data
+  <i class="material-icons right"></i>
+</button>
+<br><br>
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="am">Add Money
+  <i class="material-icons right"></i>
+</button>
+
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="tm">Withdraw Money
+  <i class="material-icons right"></i>
+</button>
+
+
+
+
+
+
+<button class="btn waves-effect waves-light #004d40 teal darken-4" type="submit" name="action" id="loan">Apply For Loan
+  <i class="material-icons right"></i>
+</button>
+
+</button>
+
+
+  
+ 
+</div>
+</div>
+
+
+
+
+
+<!-- 
+
+
+
+
+
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  © 2023 Copyright:
+  Mutual Fund investments are subject to market risks, read all scheme related documents carefully
+  <a class="text-reset " href="index.html">BANK'O'FY</a>
+</div>
+  -->
+
+ <div class="footer">
+  <p>© 2023 Copyright:<a  href="index.html">  BANK'O'FY</a></p>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+</script>
+
+<script type="module" src="auth.js"> </script>
+
+
+
+
+</body>
+</html>

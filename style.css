@@ -1,0 +1,219 @@
+body {
+    font-family: "Roboto";
+    font-weight: 600;
+    background-color: #FFFFE8;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    z-index: 1;
+}
+/* .container-fluid{
+    padding-right: 0;
+} */
+.navbar-brand {
+    font-family: "Ubuntu";
+    color: #000000;
+    font-size: 2.6rem;
+}
+.brand{
+    size: 1ch;
+}
+.nav-link{
+    color: #00337C;
+}
+.nav-link:hover{
+    color: #704242;
+}
+.nav-item {
+    padding: 0 18px;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+.title-img {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 22.5%;
+}
+#features{
+    padding: 0% 3%;
+}
+.feature-box {
+    padding-left: 10%;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Merriweather";
+    color: #00337C;
+}
+
+p {
+    color: #000000;
+}
+
+.icon {
+    color: #064fb4;
+    margin-bottom: 1rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #00337C;
+    transform: scale(1.1);
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 1.5%;
+}
+
+#download {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.download-heading {
+    font-family: Montserrat;
+    color: white;
+    font-size: 4rem;
+
+}
+#about-us {
+    padding: 7% 15%;
+}
+#contact {
+    padding: 7% 15%;
+    color: #00337C;
+    padding-bottom: 2%;
+}
+
+.contact-icon {
+    background-color: #ded7d7;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.reach-box {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.reach-box-l {
+    margin-right: 2rem;
+}
+
+.contact-right {
+    background-color: #ded7d7;
+    padding: 3%;
+}
+
+input,
+textarea {
+    color: #00337C;
+    background-color: #ded7d7;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #00337C;
+    resize: none;
+}
+input[type="submit"]{
+    border: none;
+    width: 20%;
+    padding: 1%;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    background-color:#FFFFE8;
+    transition: transform 0.3s;
+
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+input[type="submit"]:hover{
+    color: #FFFFE8;
+    background-color: #00337C;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    transform: scale(1.05);
+    font-weight: 600;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.inputbox {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    color: #00337C;
+    pointer-events: none;
+}
+
+input:focus~span,
+textarea:focus~span,
+input:valid~span,
+textarea:valid~span{
+    color: rgb(255, 57, 57);
+    font-size: 15px;
+    transform: translateY(-20px);
+}
+@media (max-width:992px) {
+    .top{
+        padding-left: 0;
+    }
+    #title {
+        text-align: center;
+    }
+    #about-us {
+        text-align: center;
+    }
+    .contact-left{
+        margin-top: 1rem;
+    }
+    .contact-right{
+        padding: 10%;
+        margin-top: 3rem;
+    }
+    input[type="submit"]{
+        width: 24%;
+        font-size: 1.1rem;
+        padding: 3%;
+    }
+
+    input[type="submit"]:hover{
+        width: 26%;
+        transform: scale(1.08);
+    }
+
+}
