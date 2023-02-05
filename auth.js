@@ -101,13 +101,13 @@ signInWithEmailAndPassword(auth, email, password)
     // alert("Successfully LOGGED IN");
     M.toast({html: 'Successfully Loged in',classes:"green rounded",outDuration:50})
 
-    document.querySelectorAll("li")[2].innerHTML=('<a  id="logout" style="color:black;" >Log Out</a>');
+    document.querySelectorAll("li")[2].innerHTML=('<a  id="logout" >Log Out</a>');
     
 
     document.querySelectorAll("li")[0].innerHTML=('<a  id="logout" visibility:none></a>');
 
 
-    document.querySelectorAll("li")[3].innerHTML=("<a id='delete' style="color:black;"> Delete Account</a>");
+    document.querySelectorAll("li")[3].innerHTML=("<a id='delete'> Delete Account</a>");
     
 //document.querySelector("#detail").style.display="block";
 
