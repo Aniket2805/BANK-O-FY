@@ -107,7 +107,7 @@ signInWithEmailAndPassword(auth, email, password)
     document.querySelectorAll("li")[0].innerHTML=('<a  id="logout" visibility:none></a>');
 
 
-    document.querySelectorAll("li")[3].innerHTML=("<a id='delete'> Delete Account</a>");
+    document.querySelectorAll("li")[3].innerHTML=('<a id="delete"> Delete Account</a>');
     
 //document.querySelector("#detail").style.display="block";
 
