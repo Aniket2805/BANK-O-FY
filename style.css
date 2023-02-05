@@ -192,6 +192,7 @@ textarea:valid~span{
     .top{
         padding-left: 0;
     }
+    .nav-ani{padding-left: 0;}
     #title {
         text-align: center;
     }
