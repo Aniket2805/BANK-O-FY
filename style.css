@@ -14,6 +14,17 @@ body {
     background-size: cover;
     z-index: 1;
 }
+.top{
+    display: flex;
+    justify-content: center;
+}
+.top-r{
+    color: #00337C;
+    padding: 6%;
+}
+.top-r h1{
+    font-size: 3.3rem;
+}
 /* .container-fluid{
     padding-right: 0;
 } */
@@ -40,6 +51,7 @@ h1 {
     font-size: 4rem;
     line-height: 1.5;
 }
+
 .download-btn {
     margin: 5% 3% 5% 0;
 }
@@ -217,4 +229,9 @@ textarea:valid~span{
         transform: scale(1.08);
     }
 
+}
+@media (max-width:415px){
+    .top-r h1{
+        font-size: 2.6rem;
+    }
 }
